@@ -491,12 +491,13 @@ CREATE TABLE IF NOT EXISTS `tbl_service_type` (
 --
 -- Table structure for table `tbl_sex`
 --
-
-CREATE TABLE IF NOT EXISTS `tbl_sex` (
-  `sex_id` int(11) NOT NULL AUTO_INCREMENT,
-  `sex_name` varchar(50) NOT NULL,
-  PRIMARY KEY (`sex_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+-- Reverse this
+--CREATE TABLE IF NOT EXISTS `tbl_sex` (
+  --`sex_id` int(11) NOT NULL AUTO_INCREMENT,
+  `--sex_name` varchar(50) NOT NULL,
+  --PRIMARY KEY (`sex_id`)
+--) 
+ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 --
 -- Dumping data for table `tbl_sex`
