@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Company Profile</title>
+</head>
+<body>
+	<?php $this->load->view("include-site-header"); ?>
+	<?php $this->load->view("menu"); ?>
+	<div class="container site-body">
+    	<div class="row">
+            <div class="panel panel-default backgroundgray">
+            	Filter <form class="form-inline" action="" role="form" enctype="multipart/form-data">
+                       <input type="text" name="company_name" placeholder="type company name">
+                       <select class="form-inline">
+                       <?php foreach($functions as $function):?>
+                       <option>Select Functions</option>
+                       <option value="<?php echo $function->function_id;?>"><?php echo $function->function_name;?></option>
+                       <?php endforeach;?>
+                       </select>
+                       <select class="form-inline" name="location_id">
+                       <?php foreach($location as $locations):?>
+                       <option>Select Location</option>
+                       <option value="<?php echo $locations->city_id;?>"><?php echo $locations->city_name;?></option>
+                       <?php endforeach;?>
+                       </select>
+                       <select class="form-inline" name="salary_range">
+                       <?php foreach($salaryrange as $salary_range):?>
+                       <option>Select Salary range</option>
+                       <option>Select Location</option>
+                       <?php endforeach;?>
+                       </select>
+                      
+                       </form>
+                <div class="look decor">Searched Results
+                <a href="#" class="label label-success pull-right advancesearch">Advance Search</a>
+                </div>
+                <script>
+					$(".advancesearch").click(function(e) {
+                        e.preventDefault();
+						$("#myModal").modal("show");
+                    });
+				</script>
+				<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="look decor"></div>
+      </div>
+      <div class="modal-body" id="details_container">
+        
+      </div>
+     
+    </div>
+  </div>
+</div>
+                <table class="table table-striped">
+                <tr><th>Company Name</th>
+                	<th>Job Title</th>
+                    <th>Specification</th>
+                    <th>Education</th>
+                    <th>Deadline</th>
+                    <th></th>
+                    </tr>
+                <?php foreach($jobs as $job):?>
+                <tr>
+                	<td><?php echo $job->Company->company_name;?></td>
+                    <td><?php echo $job->job_title;?></td>
+                    <td><?php echo $job->jobrequirement->job_requirement_specification;?></td>
+                    <td><?php echo $job->jobrequirement->job_requirement_education_level;?></td>
+                    <td><?php echo getdays($job->deadline)."days remaining";?></td>
+                	<td><a href="<?php echo site_url("jobs/applyjobs/".$job->job_id);?>" class="btn btn-success">Apply Now</a></td>
+                </tr> 
+			<?php endforeach;?>
+            	</table>
+            </div>
+		</div>
+	</div>

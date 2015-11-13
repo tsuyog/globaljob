@@ -1,0 +1,249 @@
+@charset "utf-8";
+/* CSS Document */
+body
+{
+	background-color:#efefef; 
+	font-family:"Actor";
+}
+.header
+{
+	margin-top:20px;
+	margin-bottom:20px;
+}
+.gobuttonn {
+	margin-left:250px;
+	}
+.navbar-green
+{
+	background-image:url(../images/menu_bg.png);	
+}
+.site-body
+{
+	background-color:#FFF;
+	margin-top: -20px;
+	padding-top: 20px;
+}
+.site-lower-body
+{
+	background-color:#7cb021;
+	margin-top: -10px;
+	padding-top: 5px;
+}
+.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+width: 100%;
+}
+.has-error {
+	border-color:#F00;
+	}
+.advs img
+{
+	margin-bottom:10px;
+}
+.advs img[last-child]
+{
+	margin-bottom:0px;
+}
+
+.corporate-jobs-container
+{
+	margin-top:10px;
+}
+.profile-pic {margin: 10px auto;}
+.label {
+font-size: 85%;
+margin: 0px 10px;
+}
+.h3 {
+font-size: 20px;
+font-weight: 600;
+color: #202429;
+border-bottom: #ECDCDC dotted 3px;
+padding: 5px 5px 5px 0px;
+margin-bottom: 5px;
+}
+.disp {
+	list-style:none;
+	border-bottom: #ECDCDC dotted 1px;
+	}
+.format {
+	list-style:none;
+	}
+.fm {
+	list-style:none;
+	padding-left: 5px;
+	}
+.h2{
+color: #F7170E;
+font-size: 17px;
+margin-bottom: 3px;
+font-weight: 400;
+
+}
+.profilenav{
+color: #332525;
+font-size: 17px;
+margin-bottom: 3px;
+font-weight: 400;
+}
+a:hover{
+	text-decoration: none;
+	
+}
+.backgroundgray{
+background-color: #CCC;
+}
+.btnlookup{
+	margin-top: 10px;
+}
+.look {
+	color: #202429;
+	border-bottom: #ECDCDC dotted 1px;
+}
+.decor{
+	text-align:center;
+	margin-bottom:5px;
+}
+.credential{
+	color: #202429;
+	margin-top: 20px;
+	border-bottom: #ECDCDC dotted 1px;
+}
+
+.panel-heading
+{
+	color:#7CB021 !important;	
+}
+.message{
+	height:10000px;
+	width: 800px;
+}
+.myinput {
+	width: 800px;
+	}
+.bestregards {
+		text-align:right;
+		text-shadow:#390;
+	}
+.myitem {
+	alignment-adjust:central;
+	margin-left:200px !important;
+	}
+.foot {
+		background-color:#fe860c;
+		list-style:none;
+	}
+/*.panel-default>.panel-heading {
+background-image: -webkit-linear-gradient(top,#f5f5f5 0,#e8e8e8 100%);
+background-image: linear-gradient(to bottom,#f5f5f5 0,#e8e8e8 100%);
+background-repeat: repeat-x;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff5f5f5',endColorstr='#ffe8e8e8',GradientType=0);
+}*/
+.employer-name a.title
+{
+	color:#7cb021;
+}
+.employer-logo img
+{
+	width:100%;
+}
+.home-page-carousel img
+{
+	height:160px !important;
+}
+.posted-job-list a
+{
+	font-size:12px;	
+}
+.panel-default>.panel-heading {
+background-image: -webkit-linear-gradient(top,#e0e0df 0,#fafafa 100%);
+background-image: linear-gradient(to bottom,#e0e0df 0,#fafafa 100%);
+background-repeat: repeat-x;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e0e0df',endColorstr='#fafafa',GradientType=0);
+}
+.list-group {
+padding-left: 0;
+margin-bottom: 2px;
+box-shadow:none;
+}
+.tooltip-inner {
+	max-width: 200px;
+	padding: 3px 8px;
+	color: #ffffff;
+	text-align: left;
+	text-decoration: none;
+	color: #FFF;
+	text-decoration: none;
+	background-image: -webkit-linear-gradient(top,#5d9005 0,#7cb021 100%);
+	background-image: linear-gradient(to bottom,#5d9005 0,#7cb021 100%);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5d9005',endColorstr='#7cb021',GradientType=0);
+}
+.tooltip.bottom .tooltip-arrow {
+top: 0;
+left: 50%;
+margin-left: -5px;
+border-bottom-color: #5d9005;
+border-width: 0 5px 5px;
+}
+.tooltip-inner a
+{
+	color:#FFF;
+}
+.tooltip-inner a:hover
+{
+	color:#CCC;
+}
+.list-group-item {
+position: relative;
+display: block;
+padding: 5px 5px 5px 5px;
+margin-bottom: -1px;
+background-color: #ffffff;
+border: 1px solid #dddddd;
+}
+.list-group-item:first-child {
+border-top-right-radius: 0px;
+border-top-left-radius: 0px;
+}
+.list-group-item:last-child {
+margin-bottom: 0;
+border-bottom-right-radius: 0px;
+border-bottom-left-radius: 0px;
+}
+.hot-jobs-container
+{
+	height: 292px;
+	margin-bottom: 7px;
+}
+
+/* Tabs Menu */
+.tabs > li > a, .tabs > li > a {
+color: #FFF;
+text-decoration: none;
+background-image: -webkit-linear-gradient(top,#5d9005 0,#7cb021 100%);
+background-image: linear-gradient(to bottom,#5d9005 0,#7cb021 100%);
+background-repeat: repeat-x;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5d9005',endColorstr='#7cb021',GradientType=0);
+}
+.tabs > li > a:hover, .tabs > li > a:focus {
+color: #FFF;
+text-decoration: none;
+background-image: -webkit-linear-gradient(top,#5d9005 0,#7cb021 100%);
+background-image: linear-gradient(to bottom,#5d9005 0,#7cb021 100%);
+background-repeat: repeat-x;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5d9005',endColorstr='#7cb021',GradientType=0);
+}
+.site-footer
+{
+	min-height:250px;
+	background-color:#fe860c;	
+}
+.homepage-tabbed
+{
+	background:#FFF;	
+}
+.image_upload{
+	height:400px;
+	width:400px;
+	border:#333;
+}
